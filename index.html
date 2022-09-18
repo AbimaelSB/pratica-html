@@ -3,24 +3,61 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
   <title>Html</title>
 </head>
 <body>
   <header>
-  <h1>Índice</h1>
-
+    <div>
+      <h1><u>Índice:</u></h1>
+      <ol>
+        <li><a href="#o-que-e-html">O que é HTML?</a></li>
+        <li><a href="#uso-html">Uso do HTML</a></li>
+      </ol>
+    </div>
   </header>
-  <article>
-    <h2 id="o-que-e-html">O que é HTML?</h2>
-    <p>O <abbr title="HyperText Markup Language ou Linguagem de Marcação de HiperTexto"><strong>HTML</strong></abbr> é uma Linguagem de Marcação utilizada na criação de páginas WEB, desenvolvida originalmente pelo físico britânico Tim Berners-Lee. Todo documento HTML é constituído por marcadores (ou em inglês <i>tag</i>), palavras entre os sinais menor que (<) e maior que (>). Os marcadores podem ter atributos, valores e/ou filhos e em sua maioria necessitam ser abertos e fechados. Por exemplo:</p>
-    <blockquote>
-      Marcador com abertura e fechadura:<br>
-      &lt;p&gt;Nam nec odio vel turpis.&lt;/p&gt; <br>
-      <br>
-      Marcador apenas com abertura:<br>
-      &lt;br&gt; &nbsp;&nbsp;&nbsp;&nbsp;(Realiza quebra de linha) 
-    </blockquote>
+  <hr>
+  <article class="container">
+    <section id="o-que-e-html">
+      <h2>O que é HTML?</h2>
+      <p>O <abbr title="HyperText Markup Language ou Linguagem de Marcação de HiperTexto"><strong>HTML</strong></abbr> é uma Linguagem de Marcação utilizada na criação de páginas WEB, desenvolvida originalmente pelo físico britânico Tim Berners-Lee. Todo documento HTML é constituído por marcadores (<mark>em inglês <i>tags</i></mark>): palavras entre os sinais menor que (<) e maior que (>). Os marcadores podem ter atributos, valores e/ou filhos e podem ser utilizados sozinhos ou em conjunto com o marcador de fechamento, em que há a adição do caractere “/”. Por exemplo:</p>
+      <blockquote>
+        Marcador com abertura e fechamento:<br>
+        &lt;p&gt;Nam nec odio vel turpis.&lt;/p&gt; (Adiciona um parágrafo) <br>
+        <br>
+        Marcador apenas com abertura:<br>
+        &lt;br&gt; &nbsp;&nbsp;&nbsp;&nbsp;(Realiza quebra de linha) 
+      </blockquote>
+      <p>Todo elemento HTML representa um item da página, como um parágrafo, uma imagem, um link, um formulário, etc. Existem dois tipo de elementos:</p>
+      <ol>
+        <li>Elementos de bloco:</li>
+        <p>São isolados pela adição de uma linha antes e após a exibição do conteúdo e ocupam toda a largura disponível.</p>
+        <li>Elementos inline:</li>
+        <p>Ocupam apenas o espaço correspondente ao que será inserido na tela.</p>
+      </ol>
+    </section>
+    <section id="uso-html">
+      <h2>Uso do HTML</h2>
+      <p>Como já vimos anteriormente, o HTML não é uma linguagem de programação mas sim uma linguagem de marcação que contém uma série de tags que possibilitam a criação de conteúdos com diferentes funcionalidades.</p>
+      <p>O HTML está principalmente na parte visual das aplicações, na parte do frontend. Em conjunto com o CSS e o Javascript, formam a base do frontend e das páginas web. Em outras palavras, Frontend é a parte da aplicação que interage diretamente com o usuário.</p>
+
+      <p>Estes são alguns dos usos mais comuns para o HTML:</p>
+
+      <ul>
+        <li>
+          <h4>Desenvolvimento Web</h4>
+          <p>Os desenvolvedores usam códigos HTML para projetar como um navegador vai exibir os elementos das páginas, como textos, formulários, hiperlinks e arquivos de mídia.</p>
+        </li>
+        <li>
+          <h4>Navegação na internet</h4>
+          <p>Os usuários podem navegar facilmente e inserir links entre páginas e sites relacionados, já que o HTML é amplamente usado para incorporar hiperlinks.</p>
+        </li>
+        <li>
+          <h4>Documentação</h4>
+          <p>O HTML torna possível a organização e a formatação de documentos.</p>
+        </li>
+      </ul>
+    </section>
   </article>
-  
 </body>
 </html>
